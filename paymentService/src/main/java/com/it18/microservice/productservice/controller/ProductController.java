@@ -27,7 +27,7 @@ public class ProductController {
     	 System.out.println("Product Details : "+ request);
 
     	 OrderResponse orderResponse = new OrderResponse();
-    	 orderResponse.setUserId(UUID.randomUUID().toString());
+    	 orderResponse.setproductId(UUID.randomUUID().toString());
     	 orderResponse.setMessage("Successfully created the product");
 
         return orderResponse ;

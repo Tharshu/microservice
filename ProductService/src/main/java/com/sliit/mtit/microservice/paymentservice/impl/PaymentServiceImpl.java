@@ -30,7 +30,7 @@ public class PaymentServiceImpl {
         ResponseEntity<PaymentCreationResponse> userCreationResponse = restTemplate.postForEntity("http://localhost:5223/users",paymentCreationRequest, PaymentCreationResponse.class);
 
         paymentResponse paymentResponse = new paymentResponse();
-        paymentResponse.setOrderId(UUID.randomUUID().toString());
+        paymentResponse.setpaymentId(UUID.randomUUID().toString());
         paymentResponse.setUserId(userCreationResponse.getBody().getUserId());
         paymentResponse.setMessage("Successfully payment made");
 

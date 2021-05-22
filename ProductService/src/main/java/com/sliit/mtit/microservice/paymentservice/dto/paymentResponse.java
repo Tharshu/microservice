@@ -2,7 +2,7 @@ package com.sliit.mtit.microservice.paymentservice.dto;
 
 public class paymentResponse {
 
-    private String orderId;
+    private String paymentId;
     private String userId;
     private String message;
 
@@ -14,12 +14,12 @@ public class paymentResponse {
         this.userId = userId;
     }
 
-    public String getOrderId() {
-        return orderId;
+    public String getpaymentId() {
+        return paymentId;
     }
 
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
+    public void setpaymentId(String paymentId) {
+        this.paymentId = paymentId;
     }
 
     public String getMessage() {
@@ -29,4 +29,7 @@ public class paymentResponse {
     public void setMessage(String message) {
         this.message = message;
     }
+
+
+	
 }

@@ -2,15 +2,15 @@ package com.it18.microservice.orderservice.dto;
 
 public class UserCreationResponse {
 
-    private String userId;
+    private String productId;
     private String message;
 
-    public String getUserId() {
-        return userId;
+    public String getproductId() {
+        return productId;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setproductId(String productId) {
+        this.productId = productId;
     }
 
     public String getMessage() {
